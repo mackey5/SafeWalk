@@ -1,3 +1,3 @@
 SafeWalkClient
 ==============
-Screw this crap
+SafeWalk from CS180
