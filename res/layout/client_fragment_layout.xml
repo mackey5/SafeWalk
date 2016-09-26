@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.purdue.hbeckeri.MainActivity" >
+
+    <!-- TODO your layout here -->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:padding="@dimen/padding"
+        android:text="@string/name"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_toRightOf="@+id/name"
+        android:inputType="textNoSuggestions"
+        android:padding="@dimen/padding"
+        android:text="@string/default_name"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:id="@+id/preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:padding="@dimen/padding"
+        android:text="@string/preferences"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/types"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preferences"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/type1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioType"
+            android:text="@string/type1" />
+
+        <RadioButton
+            android:id="@+id/type2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioType"
+            android:text="@string/type2" />
+
+        <RadioButton
+            android:id="@+id/type0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioType"
+            android:text="@string/type0" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/types"
+        android:padding="@dimen/padding"
+        android:text="@string/to"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg_to"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/to1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioTo"
+            android:text="@string/CL50" />
+
+        <RadioButton
+            android:id="@+id/to2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioTo"
+            android:text="@string/PMU" />
+
+        <RadioButton
+            android:id="@+id/to3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioTo"
+            android:text="@string/EE" />
+
+        <RadioButton
+            android:id="@+id/to4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioTo"
+            android:text="@string/PUSH" />
+
+        <RadioButton
+            android:id="@+id/to5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioTo"
+            android:text="@string/LWSN" />
+
+        <RadioButton
+            android:id="@+id/to6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioTo"
+            android:text="@string/Star" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_to"
+        android:padding="@dimen/padding"
+        android:text="@string/from"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg_from"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/from1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioFrom"
+            android:text="@string/CL50" />
+
+        <RadioButton
+            android:id="@+id/from2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioFrom"
+            android:text="@string/PMU" />
+
+        <RadioButton
+            android:id="@+id/from3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioFrom"
+            android:text="@string/EE" />
+
+        <RadioButton
+            android:id="@+id/from4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioFrom"
+            android:text="@string/PUSH" />
+
+        <RadioButton
+            android:id="@+id/from5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioFrom"
+            android:text="@string/LWSN" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bu_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_from"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top"
+        android:enabled="true"
+        android:gravity="center"
+        android:minHeight="60dp"
+        android:minWidth="100dp"
+        android:onClick="onSubmit"
+        android:padding="@dimen/padding"
+        android:text="@string/submit" />
+
+</RelativeLayout>

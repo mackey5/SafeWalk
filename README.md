@@ -1,1 +1,3 @@
-# SafeWalk
+SafeWalkClient
+==============
+Screw this crap
